@@ -1,5 +1,5 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonText } from '@ionic/react';
+import ExploreContainer from '../components/ExploreContainer'; // Custom container for your content
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -7,16 +7,28 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>Home</IonTitle>
         </IonToolbar>
       </IonHeader>
+
+      
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
+            <IonTitle size="large">Welcome</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
+
+        <div className="home-content">
+          <ExploreContainer />
+         
+          <IonText color="primary">
+            <h2>Welcome to the Home Page!</h2>
+          </IonText>
+          <IonButton expand="block" color="primary" onClick={() => alert('Button clicked!')}>
+            Click Me
+          </IonButton>
+        </div>
       </IonContent>
     </IonPage>
   );
