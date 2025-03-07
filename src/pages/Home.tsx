@@ -44,7 +44,7 @@ function Home() {
   ];
 
   return (
-    <IonReactRouter>
+   <IonReactRouter>
       <IonTabs>
         <IonTabBar slot="bottom">
           {tabs.map((item, index) => (
@@ -65,6 +65,7 @@ function Home() {
         </IonRouterOutlet>
       </IonTabs>
     </IonReactRouter>
+
   );
 }
 
