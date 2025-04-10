@@ -159,7 +159,7 @@ import {
                 >
                   Signup
                 </IonButton>
-                <div style={{ textAlign: "center", marginTop: "60%" }}>
+                <div style={{ textAlign: "center", marginTop: "20vh" }}>
                   <span>Already have an account? </span>
                   <Link to="/it35-lab/">Login</Link>
                 </div>

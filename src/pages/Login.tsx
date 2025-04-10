@@ -95,7 +95,7 @@ const Login: React.FC = () => {
               <IonButton onClick={() => doLogin()} expand="block" style={{ marginTop: 20 }}>
                 Login
               </IonButton>
-              <div style={{ textAlign: "center", marginTop: "80%" }}>
+              <div style={{ textAlign: "center", marginTop: "40vh" }}>
                 <span>Don't have an account yet? </span>
               </div>
               <IonButton routerLink="/it35-lab/signup" expand="block" style={{ marginTop: 10 }}>
