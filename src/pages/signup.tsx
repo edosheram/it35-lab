@@ -22,7 +22,7 @@ import {
   import { Link } from "react-router-dom";
   import { supabase } from "../utils/supabaseClient";
   
-  const Signup: React.FC = () => {
+  const signup: React.FC = () => {
     const [present] = useIonToast();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -216,4 +216,4 @@ import {
     );
   };
   
-  export default Signup;
+  export default signup;
