@@ -3,10 +3,11 @@ import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Login from './pages/Login';
 import Menu from './pages/Menu';
+import Signup from "./pages/signup";
 
 
 import '@ionic/react/css/core.css';
-
+  
 
 import '@ionic/react/css/normalize.css';
 import '@ionic/react/css/structure.css';
@@ -34,6 +35,7 @@ const App: React.FC = () => (
       <IonRouterOutlet>
         <Route exact path="/it35-lab" component={Login} />
         <Route path="/it35-lab/app" component={Menu} />
+        <Route path="/it35-lab/signup" component={Signup} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
